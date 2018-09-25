@@ -6,12 +6,36 @@
 .topnav {
     background-color: #3f475a;
     overflow: hidden;
+		box-shadow: 0rem .5rem 1rem rgba(0,0,0,.3);
+		margin-bottom: 10px;
 }
 
 body {
   background-color: #1f232d;
 }
 
+#header{
+	background-image: url("Sunset.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-text {
+	font-family: Merriweather;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#AkashPhoto {
+	box-shadow: 0rem .5rem 1rem rgba(0,0,0,.3);
+}
 .topnav a {
     font-family: Roboto;
     float: left;
@@ -23,6 +47,38 @@ body {
     font-size: 17px;
 }
 
+.row {
+		background-color: #e1e4ea;
+    display: flex;
+		box-shadow: 0rem .5rem 1rem rgba(0,0,0,.3);
+		margin: 20px;
+		padding: 2%;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+		width: 50%;
+		padding: 2%;
+}
+
+.center {
+	text-align: center;
+}
+
+p {
+		color: black;
+		font-family: Merriweather;
+		font-size: 15px;
+		margin: 8px;
+}
+
+h2 {
+	color: black;
+	font-family: Merriweather;
+	font-size: 20px;
+	margin: 1%;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
@@ -32,6 +88,23 @@ body {
 .active {
     background-color: #3f475a;
     color: #b4bacb;
+}
+
+footer {
+	background-color: #3f475a;
+	overflow: hidden;
+	box-shadow: 0rem .5rem 1rem rgba(0,0,0,.3);
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	font-family: Merriweather;
+	color: white;
+	padding: 10px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -61,10 +134,4 @@ body {
     display: block;
     text-align: left;
   }
-}
-
-.about-me {
-  font-family: Merriweather;
-  font-size: 15px;
-  color: #f0f1f5;
 }
